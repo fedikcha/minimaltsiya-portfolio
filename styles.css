@@ -293,8 +293,6 @@ select:-webkit-autofill:focus{
 
 
 /* Img-text-info */
-.img-text-info {
-}
 .img-text-info__picture {
   display: block;
 }
@@ -312,12 +310,21 @@ select:-webkit-autofill:focus{
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
 
+.img-text-info__index-about .img-text-info__info{
+  padding-top: 32px;
+  padding-bottom: 50px;
+}
+
 .img-text-info__title {
   margin-top: 0;
   margin-bottom: 24px;
   font-family: var(--accent-font-family);
   font-size: 40px;
   line-height: 42px;
+}
+
+.img-text-info__index-about .img-text-info__title{
+  margin-bottom: 28px;
 }
 
 .img-text-info__description {
@@ -403,6 +410,12 @@ select:-webkit-autofill:focus{
 }
 
 
+/* About me */
+.about-me{
+  margin-bottom: 115px;
+}
+
+
 /* Footer */
 .site-footer{
   background-color: var(--grey-blue);
@@ -481,12 +494,22 @@ only screen and (                min-resolution: 2dppx) {
     align-items: center;
   }
 
+  .img-text-info__index-about{
+    align-items: stretch;
+  }
+
   .img-text-info:nth-child(even){
     flex-direction: row-reverse;
   }
 
   .img-text-info__img{
     margin-bottom: 0;
+  }
+
+  .img-text-info__index-about .img-text-info__img{
+    height: 100%;
+    object-fit: cover;
+    object-position: right bottom;
   }
 
   .img-text-info__info{
@@ -597,6 +620,10 @@ only screen and (                min-resolution: 2dppx) {
   margin-bottom: 48px;
 }
 
+.about-me{
+  margin-bottom: 96px;
+}
+
  .img-text-info__picture{
   flex-shrink: 0;
  }
@@ -609,10 +636,18 @@ only screen and (                min-resolution: 2dppx) {
   object-fit: cover;
  }
 
+ .img-text-info__index-about .img-text-info__img{
+  width: 280px;
+ }
+
  .img-text-info__info{
   flex-grow: 1;
   width: auto;
   margin-left: 69px;
+ }
+
+ .img-text-info__index-about .img-text-info__info{
+  padding-top: 50px;
  }
 
  .img-text-info:nth-child(even) .img-text-info__info{
@@ -634,6 +669,12 @@ only screen and (                min-resolution: 2dppx) {
     margin-bottom: 56px;
     font-size: 50px;
     line-height: 1;
+  }
+
+  .img-text-info__index-about .img-text-info__img{
+    width: 540px;
+    height: 600px;
+    /* object-position: center top; */
   }
 }
 
