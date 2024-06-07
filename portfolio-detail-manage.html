@@ -62,10 +62,57 @@
             </div>
           </div>
 
-          <!-- project-details -->
-          <div class="project-meta-details__details project-details">s</div>
+
+          <!-- Project-details -->
+          <div class="project-meta-details__details project-details">
+            <section class="project-details__section project-details">
+              <h2 class="project-details__heading">Project Background</h2>
+              <div class="project-details__text-wrapper">
+                <p class="project-details__text">This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.</p>
+              </div>
+            </section>
+
+            <section class="project-details__section project-details">
+              <h2 class="project-details__heading project-details__heading--static-praviews">Static Previews</h2>
+              <ul class="project-details__static-previews static-previews" role="list">
+                <li class="static-previews__item" role="listitem">
+                  <picture class="static-previews__picture">
+                    <source srcset="static-preview-1-manage.jpg 1x, static-preview-1-manage-tablet@2x.jpg 2x" media="(min-width:600px)">
+                    <img class="static-previews__img" src="static-preview-1-manage.jpg" alt="Preview image of Manage project" width="313" height="197" srcset="static-preview-1-manage.jpg 1x, static-preview-1-manage@2x.jpg 2x">
+                  </picture>
+                </li>
+
+                <li class="static-previews__item" role="listitem">
+                  <picture class="static-previews__picture">
+                    <source srcset="static-preview-2-manage.jpg 1x, static-preview-2-manage-tablet@2x.jpg 2x" media="(min-width:600px)">
+                    <img class="static-previews__img" src="static-preview-2-manage.jpg" alt="Preview image of Manage project" width="313" height="197" srcset="static-preview-2-manage.jpg 1x, static-preview-2-manage@2x.jpg 2x">
+                  </picture>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
       </div>
+
+
+      <!-- Page-controls -->
+      <section class="page-controls">
+        <div class="container">
+          <h2 class="visually-hidden">other projects</h2>
+          <div class="page-controls__inner">
+            <a href="portfolio-detail-fylo.html" class="page-controls__link page-controls__link--prev">
+              <svg class="page-controls__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 18" fill="none"><path stroke="currentColor" d="M9 1 1 9l8 8"/></svg>
+              <span class="page-controls__title">Fylo</span>
+              <span class="page-controls__text">Previous project</span>
+            </a>
+            <a href="portfolio-detail-bookmark.html" class="page-controls__link page-controls__link--next">
+              <svg class="page-controls__icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 18" fill="none"><path stroke="currentColor" d="m1 1 8 8-8 8"/></svg>
+              <span class="page-controls__title">Bookmark</span>
+              <span class="page-controls__text">Next project</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
 
     <!-- Contact cta -->
